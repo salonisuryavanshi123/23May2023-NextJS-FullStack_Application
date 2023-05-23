@@ -26,7 +26,7 @@ export default function Student() {
         <div>Student</div>
         <ul>
             {
-                students.map((cv,idx,arr)=>{
+                students && students.map((cv,idx,arr)=>{
                     return <li key={idx}>{cv.name} {cv.surname}</li>
                 })
             }
