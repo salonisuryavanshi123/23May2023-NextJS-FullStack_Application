@@ -23,10 +23,10 @@ export default function Student() {
     //2.3 Return Statement
   return (
     <>
-        <div>student</div>
+        <div>Student</div>
         <ul>
             {
-                students.length > 0 && students.map((cv,idx,arr)=>{
+                students.map((cv,idx,arr)=>{
                     return <li key={idx}>{cv.name} {cv.surname}</li>
                 })
             }
